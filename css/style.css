@@ -9,7 +9,7 @@ h1, h2, h3 {margin: 0;}
 ul, ol {margin: 0; padding:0;}
 p {margin: 0;}
 html, body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	font-size: 100%;
 	background: #ffffff;
 }
@@ -180,7 +180,7 @@ address span{
 .education  h3{
   background: #999;
   color: #FFF;
-  padding: 5px 274px 5px 30px;
+  padding: 5px 276px 5px 30px;
   display: inline-block;
 }
 h3.clr1{
