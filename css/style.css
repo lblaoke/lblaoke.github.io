@@ -4,13 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
-h4, h5, h6,
-h1, h2, h3 {margin: 0;}
+h4, h5, h6, h1, h2, h3 {margin: 0;}
 ul, ol {margin: 0; padding:0;}
 p {margin: 0;}
+
 html, body{
-	font-family: 'Varela Round';
-  src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');
 	font-size: 100%;
 	background: #ffffff;
 }
@@ -41,8 +39,6 @@ a:focus {
 	font-weight:700;
 	margin-bottom:1em;
 	COLOR:#fff;
-	font-family: 'Varela Round';
-	src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');
 }
 .sidebar img{
 	border:1px solid #fff;
@@ -120,7 +116,7 @@ address span{
 }
 .skills h3{
   color: #FFF;
-  padding: 5px 128px 5px 30px;
+  padding: 5px 121px 5px 30px;
   display: inline-block;
 }
 .company_details,.education_details {
@@ -131,8 +127,6 @@ address span{
 	font-weight:600;
 	font-size:1.5em;
 	margin-bottom:6px;
-	font-family: 'Varela Round';
-  src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');
 }
 .company_details h4 span,.education_details h4 span{
 	font-size: 0.65em;
@@ -182,7 +176,7 @@ address span{
 .education  h3{
   background: #999;
   color: #FFF;
-  padding: 5px 274px 5px 30px;
+  padding: 5px 263px 5px 30px;
   display: inline-block;
 }
 h3.clr1{
