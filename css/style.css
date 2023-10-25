@@ -41,8 +41,8 @@ a:focus {
 	COLOR:#fff;
 }
 .sidebar img{
-	border:1px solid #fff;
-	padding:1em;
+	border:0px solid #fff;
+	padding:0em;
 	width:100%;
 }
 .details{
