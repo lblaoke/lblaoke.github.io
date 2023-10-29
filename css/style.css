@@ -144,10 +144,10 @@ address span{
 	font-weight:300;
 	line-height:1.7em;
 }
-.cmpny1{
+/*.cmpny1{
 	border-bottom:3px dashed #999;
 	padding-bottom:1em;
-}
+}*/
 .skills{
 	margin:2em 0;
 }
@@ -458,7 +458,7 @@ address {
   padding: 1em 0 2em 0;
 }
 .company_details, .education_details,.skill_info  {
-  padding: 1em 0 0em 1em;
+/*  padding: 1em 0 0em 1em;*/
 }
 .company h3 {
   padding: 5px 41px 5px 16px;
