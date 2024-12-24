@@ -30,7 +30,7 @@ a:focus {
 }
 /*-- header_top --*/
 .sidebar{
-  background:#056540;
+  background:#005389;
   top: 0px;
   padding:2em 30px;
 }
@@ -180,13 +180,13 @@ address span{
   display: inline-block;
 }
 h3.clr1{
-	background:#ac5b5b;
+	background:#6ecadc;
 }
 h3.clr2{
-	background:#c8b747;
+	background:#e9a820;
 }
 h3.clr3{
-	background:#5776af;
+	background:#3eb991;
 }
 .copywrite{
 	padding-left:2em;
