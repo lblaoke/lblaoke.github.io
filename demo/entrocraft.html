@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EntroCraft interactive demo placeholder.">
+  <title>EntroCraft Demo</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --text: #1c2633;
+      --muted: #5f6c7b;
+      --line: #d8dee8;
+      --accent: #1f7a6d;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .page {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .summary {
+      max-width: 650px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    main {
+      padding-top: 32px;
+    }
+
+    .status-panel {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .label {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .status-panel p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="back-link" href="../index.html">Back to homepage</a>
+      <h1>EntroCraft Demo</h1>
+      <p class="summary">
+        This page is a temporary public placeholder for the future interactive EntroCraft demo.
+      </p>
+    </header>
+
+    <main>
+      <section class="status-panel" aria-labelledby="status-title">
+        <p class="label" id="status-title">Status</p>
+        <p>
+          The demo page is online-ready. The interactive content will be added in a later update.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      EntroCraft &middot; Demo placeholder
+    </footer>
+  </div>
+</body>
+</html>
