@@ -1,126 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="EntroCraft interactive demo placeholder.">
-  <title>EntroCraft Demo</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f7f8fb;
-      --text: #1c2633;
-      --muted: #5f6c7b;
-      --line: #d8dee8;
-      --accent: #1f7a6d;
-      --panel: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    .page {
-      width: min(880px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 48px 0;
-    }
-
-    header {
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration-thickness: 2px;
-      text-underline-offset: 3px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 24px;
-      font-size: 0.95rem;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 6vw, 4rem);
-      line-height: 1;
-      letter-spacing: 0;
-    }
-
-    .summary {
-      max-width: 650px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    main {
-      padding-top: 32px;
-    }
-
-    .status-panel {
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-    }
-
-    .label {
-      margin: 0 0 10px;
-      color: var(--accent);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .status-panel p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    footer {
-      margin-top: 40px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Entrocraft Interactive Demo — Entropy Shapes Performance</title>
+<link rel="stylesheet" href="entrocraft_style.css" />
 </head>
 <body>
   <div class="page">
-    <header>
-      <a class="back-link" href="../index.html">Back to homepage</a>
-      <h1>EntroCraft Demo</h1>
-      <p class="summary">
-        This page is a temporary public placeholder for the future interactive EntroCraft demo.
+    <header class="hero">
+      <h1>How <span class="brand">Entropy</span> Shapes RL <span class="brand">Performance</span></h1>
+      <p class="subtitle">
+        A simulated entropy curve control playground, powered by the empirical/theoretical findings of Entrocraft.
       </p>
     </header>
 
-    <main>
-      <section class="status-panel" aria-labelledby="status-title">
-        <p class="label" id="status-title">Status</p>
-        <p>
-          The demo page is online-ready. The interactive content will be added in a later update.
-        </p>
-      </section>
-    </main>
+    <section class="charts">
+      <div class="chart-card">
+        <div class="chart-header">
+          <h2>Entropy <span class="symbol">𝓗</span></h2>
+          <div class="legend">
+            <span class="legend-item"><i class="dot dot-green"></i>Entrocraft Entropy</span>
+            <span class="legend-item"><i class="dash dash-green"></i>Recommended Range</span>
+            <span class="legend-item"><i class="dash dash-gray"></i>GRPO Entropy</span>
+            <button class="reset-btn" id="resetBtn" type="button">Reset</button>
+          </div>
+        </div>
+        <svg id="entropyChart" viewBox="0 0 720 380" preserveAspectRatio="xMidYMid meet"></svg>
+        <p class="hint">Drag any dot up or down to reshape entropy.</p>
+      </div>
 
-    <footer>
-      EntroCraft &middot; Demo placeholder
-    </footer>
+      <div class="chart-card">
+        <div class="chart-header">
+          <h2>AIME-25 <span class="symbol">mean@32</span></h2>
+          <div class="legend">
+            <span class="legend-item"><i class="dot dot-red"></i>Entrocraft</span>
+            <span class="legend-item"><i class="dot dot-gray"></i>GRPO baseline</span>
+          </div>
+        </div>
+        <svg id="accuracyChart" viewBox="0 0 720 380" preserveAspectRatio="xMidYMid meet"></svg>
+        <p class="hint" id="summary">Linear annealing — performance steadily improves and stays stable.</p>
+      </div>
+    </section>
+
+    <section class="insight">
+      <div class="insight-card">
+        <div class="insight-icon">↘</div>
+        <h3>Low Entropy</h3>
+        <p>Fast initial gains, but the model saturates at few solutions and plateaus early at a low ceiling.</p>
+      </div>
+      <div class="insight-card highlight">
+        <div class="insight-icon">∿</div>
+        <h3>Annealing Entropy</h3>
+        <p>Linearly decaying entropy curve (from ~0.6 to ~0.2) yields the best long-term accuracy with stable training dynamics.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-icon">↗</div>
+        <h3>High Entropy</h3>
+        <p>Excessive exploration introduces instability to the training dynamics.</p>
+      </div>
+    </section>
+
   </div>
+
+  <script src="entrocraft_script.js"></script>
 </body>
 </html>
