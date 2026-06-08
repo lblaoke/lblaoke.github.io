@@ -119,6 +119,11 @@ address span{
   padding: 5px 121px 5px 30px;
   display: inline-block;
 }
+.publications h3{
+  color: #FFF;
+  padding: 5px 86px 5px 30px;
+  display: inline-block;
+}
 .company_details,.education_details {
 	padding:1.5em 0 0em 2em;
 }
@@ -151,8 +156,65 @@ address span{
 .skills{
 	margin:2em 0;
 }
+.publications{
+	margin:2em 0;
+}
 .skill_info {
 	padding:1.5em 0 0 2em;
+}
+.paper_grid{
+	padding:1.5em 0 0 2em;
+	display:grid;
+	grid-template-columns:repeat(2, minmax(0, 1fr));
+	gap:1.4em;
+}
+.paper_card{
+	border:1px solid #e6e6e6;
+	border-radius:6px;
+	background:#fff;
+	overflow:hidden;
+	box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+.paper_visual{
+	display:block;
+	background:#fff;
+	border-bottom:1px solid #eeeeee;
+}
+.paper_visual img{
+	display:block;
+	width:100%;
+	aspect-ratio:16 / 9;
+	object-fit:cover;
+}
+.paper_body{
+	padding:1em;
+}
+.paper_venue{
+	display:block;
+	margin-bottom:0.6em;
+	color:#117738;
+	font-size:0.8em;
+	font-weight:700;
+}
+.paper_card h4{
+	margin-bottom:0.7em;
+	color:#333;
+	font-size:1.05em;
+	font-weight:600;
+	line-height:1.35em;
+}
+.paper_card h4 a{
+	color:#333;
+}
+.paper_card h4 a:hover{
+	color:#117738;
+	text-decoration:none;
+}
+.paper_card p{
+	color:#777;
+	font-size:0.9em;
+	font-weight:300;
+	line-height:1.55em;
 }
 .skill_list{
 	padding:1.5em 0 0 2em;
@@ -187,6 +249,9 @@ h3.clr2{
 }
 h3.clr3{
 	background:#3eb991;
+}
+h3.clr4{
+	background:#4b5563;
 }
 .copywrite{
 	padding-left:2em;
@@ -282,7 +347,7 @@ h3.clr3{
   padding: 0 1em;
   font-size: 0.9em;
 }
-.company h3,.skills h3,.education h3{
+.company h3,.skills h3,.education h3,.publications h3{
   font-size: 1.2em;
 }
 .company_details h4, .education_details h4 {
@@ -291,8 +356,14 @@ h3.clr3{
 .company_details h6, .education_details h6 {
   font-size: 0.8em;
 }
-.company_details p, .skill_info p, .education_details p {
+.company_details p, .skill_info p, .education_details p, .paper_card p {
   font-size: 0.8em;
+}
+.paper_grid {
+  gap: 1em;
+}
+.paper_card h4 {
+  font-size: 0.95em;
 }
 .cmpny1 {
   padding-bottom: 1.5em;
@@ -369,6 +440,9 @@ address span {
 }
 .details h3 {
   font-size: 0.9em;
+}
+.paper_grid {
+  grid-template-columns: 1fr;
 }
 }
 @media (max-width: 600px){
@@ -475,11 +549,14 @@ address {
 .skills {
   margin: 1em 0;
 }
-.company h3, .skills h3, .education h3 {
+.company h3, .skills h3, .education h3, .publications h3 {
   font-size: 1em;
 }
 .skills h3 {
   padding: 5px 98px 5px 16px;
+}
+.publications h3 {
+  padding: 5px 32px 5px 16px;
 }
 .skill1 ul, .skill2 ul {
   padding-left: 2em;
@@ -492,6 +569,9 @@ address {
 }
 .education h3 {
   padding: 5px 190px 5px 16px;
+}
+.paper_grid {
+  padding: 1em 0 0 1.5em;
 }
 .copywrite p{
 	font-size:0.7em;
